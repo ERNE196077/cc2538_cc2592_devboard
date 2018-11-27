@@ -1,0 +1,1416 @@
+EESchema Schematic File Version 4
+LIBS:cc2538_cc2592-cache
+EELAYER 26 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+Text GLabel 950  3050 0    50   Input ~ 0
++3.3V
+Text GLabel 1750 1450 1    50   Input ~ 0
++3.3V
+Text GLabel 2950 1450 1    50   Input ~ 0
++3.3V
+Text GLabel 3650 2250 2    50   Input ~ 0
++3.3V
+Text GLabel 3650 2350 2    50   Input ~ 0
++3.3V
+Text GLabel 3650 2450 2    50   Input ~ 0
++3.3V
+Text GLabel 3650 2750 2    50   Input ~ 0
++3.3V
+Text GLabel 3650 3050 2    50   Input ~ 0
++3.3V
+Text GLabel 2550 4150 3    50   Input ~ 0
++3.3V
+Text GLabel 1650 4150 3    50   Input ~ 0
++3.3V
+Text GLabel 1150 5050 1    50   Input ~ 0
++3.3V
+$Comp
+L Device:R_Small R2
+U 1 1 5B1B4F5F
+P 3750 2150
+F 0 "R2" V 3554 2150 50  0000 C CNN
+F 1 "56K" V 3645 2150 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603" H 3750 2150 50  0001 C CNN
+F 3 "~" H 3750 2150 50  0001 C CNN
+	1    3750 2150
+	0    1    1    0   
+$EndComp
+$Comp
+L cc2538node-eagle-import:GND #GND0101
+U 1 1 5B1B4FE7
+P 3950 2150
+F 0 "#GND0101" H 3950 2150 50  0001 C CNN
+F 1 "GND" V 3950 2081 59  0000 R CNN
+F 2 "" H 3950 2150 50  0001 C CNN
+F 3 "" H 3950 2150 50  0001 C CNN
+	1    3950 2150
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:C_Small C4
+U 1 1 5B1B5127
+P 1650 1000
+F 0 "C4" H 1742 1046 50  0000 L CNN
+F 1 "1uF" H 1742 955 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0603" H 1650 1000 50  0001 C CNN
+F 3 "~" H 1650 1000 50  0001 C CNN
+	1    1650 1000
+	1    0    0    -1  
+$EndComp
+$Comp
+L cc2538node-eagle-import:GND #GND0102
+U 1 1 5B1B517F
+P 1650 800
+F 0 "#GND0102" H 1650 800 50  0001 C CNN
+F 1 "GND" H 1650 679 59  0000 C CNN
+F 2 "" H 1650 800 50  0001 C CNN
+F 3 "" H 1650 800 50  0001 C CNN
+	1    1650 800 
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	1650 1100 1650 1450
+$Comp
+L cc2538node-eagle-import:GND #GND0103
+U 1 1 5B1B51D3
+P 850 2150
+F 0 "#GND0103" H 850 2150 50  0001 C CNN
+F 1 "GND" V 850 2081 59  0000 R CNN
+F 2 "" H 850 2150 50  0001 C CNN
+F 3 "" H 850 2150 50  0001 C CNN
+	1    850  2150
+	0    1    1    0   
+$EndComp
+NoConn ~ 950  2250
+NoConn ~ 950  2350
+Text GLabel 950  2450 0    50   Input ~ 0
++3.3V
+Wire Wire Line
+	2950 4150 2950 4400
+$Comp
+L Device:R_Small R1
+U 1 1 5B1B5252
+P 2950 4600
+F 0 "R1" H 3009 4646 50  0000 L CNN
+F 1 "2.2" H 3009 4555 50  0000 L CNN
+F 2 "Resistors_SMD:R_0603" H 2950 4600 50  0001 C CNN
+F 3 "~" H 2950 4600 50  0001 C CNN
+	1    2950 4600
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C8
+U 1 1 5B1B5311
+P 3050 4400
+F 0 "C8" V 2821 4400 50  0000 C CNN
+F 1 "1nF" V 2912 4400 50  0000 C CNN
+F 2 "Capacitors_SMD:C_0603" H 3050 4400 50  0001 C CNN
+F 3 "~" H 3050 4400 50  0001 C CNN
+	1    3050 4400
+	0    1    1    0   
+$EndComp
+Connection ~ 2950 4400
+Wire Wire Line
+	2950 4400 2950 4500
+$Comp
+L cc2538node-eagle-import:GND #GND0104
+U 1 1 5B1B535F
+P 3250 4400
+F 0 "#GND0104" H 3250 4400 50  0001 C CNN
+F 1 "GND" V 3250 4331 59  0000 R CNN
+F 2 "" H 3250 4400 50  0001 C CNN
+F 3 "" H 3250 4400 50  0001 C CNN
+	1    3250 4400
+	0    -1   -1   0   
+$EndComp
+$Comp
+L cc2538node-eagle-import:TAC_SWITCHSMD SW1
+U 1 1 5B1B54D5
+P 2950 4900
+F 0 "SW1" V 2904 5048 50  0000 L CNN
+F 1 "RESET" V 2995 5048 50  0000 L CNN
+F 2 "cc2538node:TACTILE_SWITCH_SMD" H 2950 5100 50  0001 C CNN
+F 3 "" H 2950 5100 50  0001 C CNN
+	1    2950 4900
+	0    1    1    0   
+$EndComp
+$Comp
+L cc2538node-eagle-import:GND #GND0105
+U 1 1 5B1B5538
+P 2950 5200
+F 0 "#GND0105" H 2950 5200 50  0001 C CNN
+F 1 "GND" H 2950 5079 59  0000 C CNN
+F 2 "" H 2950 5200 50  0001 C CNN
+F 3 "" H 2950 5200 50  0001 C CNN
+	1    2950 5200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3650 3150 4000 3150
+$Comp
+L Device:C_Small C9
+U 1 1 5B1B5648
+P 4100 3150
+F 0 "C9" V 3871 3150 50  0000 C CNN
+F 1 "1uF" V 3962 3150 50  0000 C CNN
+F 2 "Capacitors_SMD:C_0603" H 4100 3150 50  0001 C CNN
+F 3 "~" H 4100 3150 50  0001 C CNN
+	1    4100 3150
+	0    1    1    0   
+$EndComp
+$Comp
+L cc2538node-eagle-import:GND #GND0106
+U 1 1 5B1B5695
+P 4300 3150
+F 0 "#GND0106" H 4300 3150 50  0001 C CNN
+F 1 "GND" V 4300 3081 59  0000 R CNN
+F 2 "" H 4300 3150 50  0001 C CNN
+F 3 "" H 4300 3150 50  0001 C CNN
+	1    4300 3150
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:Crystal Y1
+U 1 1 5B1B5B5D
+P 4600 2900
+F 0 "Y1" V 4554 3031 50  0000 L CNN
+F 1 "32Mhz" V 4645 3031 50  0000 L CNN
+F 2 "Crystals:Crystal_SMD_5032-4pin_5.0x3.2mm" H 4600 2900 50  0001 C CNN
+F 3 "~" H 4600 2900 50  0001 C CNN
+	1    4600 2900
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	3650 2850 4250 2850
+Wire Wire Line
+	4250 2850 4250 2750
+Wire Wire Line
+	4250 2750 4600 2750
+Wire Wire Line
+	3650 2950 4250 2950
+Wire Wire Line
+	4250 2950 4250 3050
+Wire Wire Line
+	4250 3050 4600 3050
+Wire Wire Line
+	4600 3050 4900 3050
+Connection ~ 4600 3050
+Wire Wire Line
+	4600 2750 4900 2750
+Connection ~ 4600 2750
+$Comp
+L Device:C_Small C10
+U 1 1 5B1B5E17
+P 5000 2750
+F 0 "C10" V 4771 2750 50  0000 C CNN
+F 1 "47pF" V 4862 2750 50  0000 C CNN
+F 2 "Capacitors_SMD:C_0603" H 5000 2750 50  0001 C CNN
+F 3 "~" H 5000 2750 50  0001 C CNN
+	1    5000 2750
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:C_Small C11
+U 1 1 5B1B5E6E
+P 5000 3050
+F 0 "C11" V 4771 3050 50  0000 C CNN
+F 1 "47pF" V 4862 3050 50  0000 C CNN
+F 2 "Capacitors_SMD:C_0603" H 5000 3050 50  0001 C CNN
+F 3 "~" H 5000 3050 50  0001 C CNN
+	1    5000 3050
+	0    1    1    0   
+$EndComp
+$Comp
+L cc2538node-eagle-import:GND #GND0107
+U 1 1 5B1B5ED7
+P 5200 2750
+F 0 "#GND0107" H 5200 2750 50  0001 C CNN
+F 1 "GND" V 5200 2681 59  0000 R CNN
+F 2 "" H 5200 2750 50  0001 C CNN
+F 3 "" H 5200 2750 50  0001 C CNN
+	1    5200 2750
+	0    -1   -1   0   
+$EndComp
+$Comp
+L cc2538node-eagle-import:GND #GND0108
+U 1 1 5B1B5F2F
+P 5200 3050
+F 0 "#GND0108" H 5200 3050 50  0001 C CNN
+F 1 "GND" V 5200 2981 59  0000 R CNN
+F 2 "" H 5200 3050 50  0001 C CNN
+F 3 "" H 5200 3050 50  0001 C CNN
+	1    5200 3050
+	0    -1   -1   0   
+$EndComp
+Text GLabel 3650 2550 2    50   Input ~ 0
+RF_N_MCU
+Text GLabel 3650 2650 2    50   Input ~ 0
+RF_P_MCU
+$Comp
+L Device:C_Small C1
+U 1 1 5B1B6F01
+P 700 5500
+F 0 "C1" H 792 5546 50  0000 L CNN
+F 1 "0.1uF" H 792 5455 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0603" H 700 5500 50  0001 C CNN
+F 3 "~" H 700 5500 50  0001 C CNN
+	1    700  5500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C2
+U 1 1 5B1B6F8B
+P 1050 5500
+F 0 "C2" H 1142 5546 50  0000 L CNN
+F 1 "0.1uF" H 1142 5455 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0603" H 1050 5500 50  0001 C CNN
+F 3 "~" H 1050 5500 50  0001 C CNN
+	1    1050 5500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C3
+U 1 1 5B1B6FD5
+P 1400 5500
+F 0 "C3" H 1492 5546 50  0000 L CNN
+F 1 "0.1uF" H 1492 5455 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0603" H 1400 5500 50  0001 C CNN
+F 3 "~" H 1400 5500 50  0001 C CNN
+	1    1400 5500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C5
+U 1 1 5B1B700D
+P 1750 5500
+F 0 "C5" H 1842 5546 50  0000 L CNN
+F 1 "0.1uF" H 1842 5455 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0603" H 1750 5500 50  0001 C CNN
+F 3 "~" H 1750 5500 50  0001 C CNN
+	1    1750 5500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C6
+U 1 1 5B1B704F
+P 2100 5500
+F 0 "C6" H 2192 5546 50  0000 L CNN
+F 1 "0.1uF" H 2192 5455 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0603" H 2100 5500 50  0001 C CNN
+F 3 "~" H 2100 5500 50  0001 C CNN
+	1    2100 5500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C7
+U 1 1 5B1B720A
+P 2450 5500
+F 0 "C7" H 2542 5546 50  0000 L CNN
+F 1 "1uF" H 2542 5455 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0603" H 2450 5500 50  0001 C CNN
+F 3 "~" H 2450 5500 50  0001 C CNN
+	1    2450 5500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	700  5400 1050 5400
+Connection ~ 1050 5400
+Wire Wire Line
+	1050 5400 1150 5400
+Connection ~ 1400 5400
+Wire Wire Line
+	1400 5400 1750 5400
+Connection ~ 1750 5400
+Wire Wire Line
+	1750 5400 2100 5400
+Connection ~ 2100 5400
+Wire Wire Line
+	2100 5400 2450 5400
+Wire Wire Line
+	1150 5050 1150 5400
+Connection ~ 1150 5400
+Wire Wire Line
+	1150 5400 1400 5400
+Wire Wire Line
+	700  5600 1050 5600
+Connection ~ 1050 5600
+Wire Wire Line
+	1050 5600 1150 5600
+Connection ~ 1400 5600
+Wire Wire Line
+	1400 5600 1750 5600
+Connection ~ 1750 5600
+Wire Wire Line
+	1750 5600 2100 5600
+Connection ~ 2100 5600
+Wire Wire Line
+	2100 5600 2450 5600
+$Comp
+L cc2538node-eagle-import:GND #GND0109
+U 1 1 5B1B76DB
+P 1150 5700
+F 0 "#GND0109" H 1150 5700 50  0001 C CNN
+F 1 "GND" H 1150 5579 59  0000 C CNN
+F 2 "" H 1150 5700 50  0001 C CNN
+F 3 "" H 1150 5700 50  0001 C CNN
+	1    1150 5700
+	1    0    0    -1  
+$EndComp
+Connection ~ 1150 5600
+Wire Wire Line
+	1150 5600 1400 5600
+$Comp
+L cc2538node-eagle-import:GND #GND0110
+U 1 1 5B1B773B
+P 3450 4150
+F 0 "#GND0110" H 3450 4150 50  0001 C CNN
+F 1 "GND" V 3450 4081 59  0000 R CNN
+F 2 "" H 3450 4150 50  0001 C CNN
+F 3 "" H 3450 4150 50  0001 C CNN
+	1    3450 4150
+	0    -1   -1   0   
+$EndComp
+Text GLabel 1750 4150 3    50   Input ~ 0
+RXD
+Text GLabel 1850 4150 3    50   Input ~ 0
+TXD
+Text GLabel 2050 4150 3    50   Input ~ 0
+PA3
+Text GLabel 2150 4150 3    50   Input ~ 0
+PA4
+Text GLabel 2250 4150 3    50   Input ~ 0
+PA5
+Text GLabel 2350 4150 3    50   Input ~ 0
+PA6
+Text GLabel 1850 1450 1    50   Input ~ 0
+PB1
+Text GLabel 1950 1450 1    50   Input ~ 0
+PB2
+Text GLabel 2050 1450 1    50   Input ~ 0
+PB3
+Text GLabel 2150 1450 1    50   Input ~ 0
+PB4
+Text GLabel 2250 1450 1    50   Input ~ 0
+PB5
+Text GLabel 2350 1450 1    50   Input ~ 0
+PB6
+Text GLabel 2450 1450 1    50   Input ~ 0
+PB7
+NoConn ~ 2550 1450
+NoConn ~ 2650 1450
+Text GLabel 5550 5650 3    50   Input ~ 0
+PC3
+Text GLabel 5750 5650 3    50   Input ~ 0
+PC2
+$Comp
+L cc2538node-eagle-import:CC2538 U1
+U 1 1 5B1AF3C3
+P 2250 2750
+F 0 "U1" H 2300 2800 50  0001 C CNN
+F 1 "CC2538" H 2250 2750 50  0001 C CNN
+F 2 "cc2538node:QFN56" H 2250 2750 50  0001 C CNN
+F 3 "" H 2250 2750 50  0001 C CNN
+	1    2250 2750
+	1    0    0    -1  
+$EndComp
+Text GLabel 2750 1450 1    50   Input ~ 0
+PD7
+Text GLabel 2850 1450 1    50   Input ~ 0
+PD6
+Text GLabel 3650 3250 2    50   Input ~ 0
+PD5
+Text GLabel 3650 3350 2    50   Input ~ 0
+PD4
+Text GLabel 3650 3450 2    50   Input ~ 0
+PD3
+Text GLabel 2650 4150 3    50   Input ~ 0
+PD0
+Text GLabel 2750 4150 3    50   Input ~ 0
+PD1
+Text GLabel 2850 4150 3    50   Input ~ 0
+PD2
+$Comp
+L cc2592:cc2592 U2
+U 1 1 5B1BFE65
+P 5850 4450
+F 0 "U2" H 6541 4496 50  0000 L CNN
+F 1 "cc2592" H 6541 4405 50  0000 L CNN
+F 2 "QFN65P400X400X100-17N:QFN65P400X400X100-17N" H 5850 4500 50  0001 C CNN
+F 3 "" H 5850 4500 50  0001 C CNN
+	1    5850 4450
+	1    0    0    -1  
+$EndComp
+Text GLabel 5950 5650 3    50   Input ~ 0
+PD5
+Text GLabel 4250 4350 0    50   Input ~ 0
+RF_N_MCU
+Text GLabel 4250 4550 0    50   Input ~ 0
+RF_P_MCU
+$Comp
+L pspice:INDUCTOR L1
+U 1 1 5B1C2DDE
+P 4550 4450
+F 0 "L1" H 4550 4272 50  0000 C CNN
+F 1 "4.7nH" H 4550 4363 50  0000 C CNN
+F 2 "Inductors_SMD:L_0603" H 4550 4450 50  0001 C CNN
+F 3 "" H 4550 4450 50  0001 C CNN
+	1    4550 4450
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	4250 4350 4350 4350
+Wire Wire Line
+	4350 4350 4350 4200
+Wire Wire Line
+	4750 4200 4750 4350
+Wire Wire Line
+	4750 4350 5200 4350
+Wire Wire Line
+	4250 4550 4350 4550
+Wire Wire Line
+	4350 4550 4350 4700
+Wire Wire Line
+	4750 4700 4750 4550
+Wire Wire Line
+	4750 4550 5200 4550
+$Comp
+L cc2538node-eagle-import:GND #GND0111
+U 1 1 5B1C513B
+P 5550 3700
+F 0 "#GND0111" H 5550 3700 50  0001 C CNN
+F 1 "GND" H 5550 3579 59  0000 C CNN
+F 2 "" H 5550 3700 50  0001 C CNN
+F 3 "" H 5550 3700 50  0001 C CNN
+	1    5550 3700
+	-1   0    0    1   
+$EndComp
+Text GLabel 5750 3250 1    50   Input ~ 0
++3.3V
+Wire Wire Line
+	5750 3250 5750 3350
+Wire Wire Line
+	5750 3350 5950 3350
+Wire Wire Line
+	5750 3800 5750 3350
+Connection ~ 5750 3350
+Wire Wire Line
+	5950 3800 5950 3350
+Connection ~ 5950 3350
+Wire Wire Line
+	5950 3350 6150 3350
+Wire Wire Line
+	6150 3800 6150 3350
+Connection ~ 6150 3350
+Wire Wire Line
+	6150 3350 6350 3350
+$Comp
+L Device:C_Small C12
+U 1 1 5B1C789E
+P 6350 3450
+F 0 "C12" H 6442 3496 50  0000 L CNN
+F 1 "1uF" H 6442 3405 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0603" H 6350 3450 50  0001 C CNN
+F 3 "~" H 6350 3450 50  0001 C CNN
+	1    6350 3450
+	1    0    0    -1  
+$EndComp
+Connection ~ 6350 3350
+Wire Wire Line
+	6350 3350 6650 3350
+$Comp
+L Device:C_Small C13
+U 1 1 5B1C7948
+P 6650 3450
+F 0 "C13" H 6742 3496 50  0000 L CNN
+F 1 "1nF" H 6742 3405 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0603" H 6650 3450 50  0001 C CNN
+F 3 "~" H 6650 3450 50  0001 C CNN
+	1    6650 3450
+	1    0    0    -1  
+$EndComp
+Connection ~ 6650 3350
+Wire Wire Line
+	6650 3350 6950 3350
+$Comp
+L Device:C_Small C14
+U 1 1 5B1C7A3A
+P 6950 3450
+F 0 "C14" H 7042 3496 50  0000 L CNN
+F 1 "12pF" H 7042 3405 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0603" H 6950 3450 50  0001 C CNN
+F 3 "~" H 6950 3450 50  0001 C CNN
+	1    6950 3450
+	1    0    0    -1  
+$EndComp
+Connection ~ 6950 3350
+$Comp
+L cc2538node-eagle-import:GND #GND0112
+U 1 1 5B1C7AFF
+P 6350 3650
+F 0 "#GND0112" H 6350 3650 50  0001 C CNN
+F 1 "GND" H 6350 3529 59  0000 C CNN
+F 2 "" H 6350 3650 50  0001 C CNN
+F 3 "" H 6350 3650 50  0001 C CNN
+	1    6350 3650
+	1    0    0    -1  
+$EndComp
+$Comp
+L cc2538node-eagle-import:GND #GND0113
+U 1 1 5B1C8689
+P 6650 3650
+F 0 "#GND0113" H 6650 3650 50  0001 C CNN
+F 1 "GND" H 6650 3529 59  0000 C CNN
+F 2 "" H 6650 3650 50  0001 C CNN
+F 3 "" H 6650 3650 50  0001 C CNN
+	1    6650 3650
+	1    0    0    -1  
+$EndComp
+$Comp
+L cc2538node-eagle-import:GND #GND0114
+U 1 1 5B1C86C2
+P 6950 3650
+F 0 "#GND0114" H 6950 3650 50  0001 C CNN
+F 1 "GND" H 6950 3529 59  0000 C CNN
+F 2 "" H 6950 3650 50  0001 C CNN
+F 3 "" H 6950 3650 50  0001 C CNN
+	1    6950 3650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7250 3350 7250 3750
+Wire Wire Line
+	6950 3350 7250 3350
+$Comp
+L pspice:INDUCTOR L2
+U 1 1 5B1C91EE
+P 7250 4000
+F 0 "L2" H 7250 3822 50  0000 C CNN
+F 1 "4.7nH" H 7250 3913 50  0000 C CNN
+F 2 "Inductors_SMD:L_0603" H 7250 4000 50  0001 C CNN
+F 3 "" H 7250 4000 50  0001 C CNN
+	1    7250 4000
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:C_Small C15
+U 1 1 5B1C9264
+P 7100 4650
+F 0 "C15" H 7192 4696 50  0000 L CNN
+F 1 "2.2pF" H 7192 4605 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0603" H 7100 4650 50  0001 C CNN
+F 3 "~" H 7100 4650 50  0001 C CNN
+	1    7100 4650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7250 4250 7250 4550
+$Comp
+L pspice:INDUCTOR L3
+U 1 1 5B1CAF8B
+P 7650 4550
+F 0 "L3" H 7650 4372 50  0000 C CNN
+F 1 "1nH" H 7650 4463 50  0000 C CNN
+F 2 "Inductors_SMD:L_0603" H 7650 4550 50  0001 C CNN
+F 3 "" H 7650 4550 50  0001 C CNN
+	1    7650 4550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4350 4200 4550 4200
+Wire Wire Line
+	4350 4700 4550 4700
+Connection ~ 4550 4700
+Wire Wire Line
+	4550 4700 4750 4700
+Connection ~ 4550 4200
+Wire Wire Line
+	4550 4200 4750 4200
+$Comp
+L Device:C_Small C16
+U 1 1 5B1CF32D
+P 8100 4650
+F 0 "C16" H 8192 4696 50  0000 L CNN
+F 1 "2.2pF" H 8192 4605 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0603" H 8100 4650 50  0001 C CNN
+F 3 "~" H 8100 4650 50  0001 C CNN
+	1    8100 4650
+	1    0    0    -1  
+$EndComp
+$Comp
+L pspice:INDUCTOR L4
+U 1 1 5B1CF3F9
+P 8550 4550
+F 0 "L4" H 8550 4372 50  0000 C CNN
+F 1 "2nH" H 8550 4463 50  0000 C CNN
+F 2 "Inductors_SMD:L_0603" H 8550 4550 50  0001 C CNN
+F 3 "" H 8550 4550 50  0001 C CNN
+	1    8550 4550
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C17
+U 1 1 5B1CF5F6
+P 9000 4650
+F 0 "C17" H 9092 4696 50  0000 L CNN
+F 1 "0.2pF" H 9092 4605 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0603" H 9000 4650 50  0001 C CNN
+F 3 "~" H 9000 4650 50  0001 C CNN
+	1    9000 4650
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C18
+U 1 1 5B1CF6EA
+P 9550 4550
+F 0 "C18" V 9321 4550 50  0000 C CNN
+F 1 "18pF" V 9412 4550 50  0000 C CNN
+F 2 "Capacitors_SMD:C_0603" H 9550 4550 50  0001 C CNN
+F 3 "~" H 9550 4550 50  0001 C CNN
+	1    9550 4550
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	9450 4550 9300 4550
+Connection ~ 9000 4550
+Wire Wire Line
+	9000 4550 8800 4550
+Wire Wire Line
+	8300 4550 8100 4550
+Connection ~ 8100 4550
+Wire Wire Line
+	8100 4550 7900 4550
+Wire Wire Line
+	7400 4550 7250 4550
+Connection ~ 7100 4550
+Wire Wire Line
+	7100 4550 6500 4550
+Connection ~ 7250 4550
+Wire Wire Line
+	7250 4550 7100 4550
+Wire Wire Line
+	6500 4350 6650 4350
+Wire Wire Line
+	6650 4350 6650 4150
+Wire Wire Line
+	6650 4150 6500 4150
+$Comp
+L cc2538node-eagle-import:GND #GND0115
+U 1 1 5B1D2CDD
+P 6750 4150
+F 0 "#GND0115" H 6750 4150 50  0001 C CNN
+F 1 "GND" V 6750 4081 59  0000 R CNN
+F 2 "" H 6750 4150 50  0001 C CNN
+F 3 "" H 6750 4150 50  0001 C CNN
+	1    6750 4150
+	0    -1   -1   0   
+$EndComp
+Connection ~ 6650 4150
+$Comp
+L cc2538node-eagle-import:GND #GND0116
+U 1 1 5B1D2DB3
+P 5000 4000
+F 0 "#GND0116" H 5000 4000 50  0001 C CNN
+F 1 "GND" H 5000 3879 59  0000 C CNN
+F 2 "" H 5000 4000 50  0001 C CNN
+F 3 "" H 5000 4000 50  0001 C CNN
+	1    5000 4000
+	-1   0    0    1   
+$EndComp
+$Comp
+L cc2538node-eagle-import:GND #GND0117
+U 1 1 5B1D2E6B
+P 5000 4900
+F 0 "#GND0117" H 5000 4900 50  0001 C CNN
+F 1 "GND" H 5000 4779 59  0000 C CNN
+F 2 "" H 5000 4900 50  0001 C CNN
+F 3 "" H 5000 4900 50  0001 C CNN
+	1    5000 4900
+	1    0    0    -1  
+$EndComp
+$Comp
+L cc2538node-eagle-import:GND #GND0118
+U 1 1 5B1D2EE7
+P 6650 4900
+F 0 "#GND0118" H 6650 4900 50  0001 C CNN
+F 1 "GND" H 6650 4779 59  0000 C CNN
+F 2 "" H 6650 4900 50  0001 C CNN
+F 3 "" H 6650 4900 50  0001 C CNN
+	1    6650 4900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5200 4150 5000 4150
+Wire Wire Line
+	5000 4150 5000 4100
+Wire Wire Line
+	5000 4800 5000 4750
+Wire Wire Line
+	5000 4750 5200 4750
+Wire Wire Line
+	6500 4750 6650 4750
+Wire Wire Line
+	6650 4750 6650 4800
+$Comp
+L Device:R_Small R6
+U 1 1 5B1D64B6
+P 6150 5400
+F 0 "R6" H 6209 5446 50  0000 L CNN
+F 1 "3.9K" H 6209 5355 50  0000 L CNN
+F 2 "Resistors_SMD:R_0603" H 6150 5400 50  0001 C CNN
+F 3 "~" H 6150 5400 50  0001 C CNN
+	1    6150 5400
+	1    0    0    -1  
+$EndComp
+$Comp
+L cc2538node-eagle-import:GND #GND0119
+U 1 1 5B1D65A2
+P 6150 5800
+F 0 "#GND0119" H 6150 5800 50  0001 C CNN
+F 1 "GND" H 6150 5679 59  0000 C CNN
+F 2 "" H 6150 5800 50  0001 C CNN
+F 3 "" H 6150 5800 50  0001 C CNN
+	1    6150 5800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6150 5100 6150 5300
+Wire Wire Line
+	6150 5500 6150 5700
+Wire Wire Line
+	9000 4750 9000 4950
+Wire Wire Line
+	9000 4950 8100 4950
+Wire Wire Line
+	7100 4950 7100 4750
+Wire Wire Line
+	8100 4750 8100 4950
+Connection ~ 8100 4950
+Wire Wire Line
+	8100 4950 7100 4950
+$Comp
+L cc2538node-eagle-import:GND #GND0120
+U 1 1 5B1DB6EC
+P 7100 5050
+F 0 "#GND0120" H 7100 5050 50  0001 C CNN
+F 1 "GND" H 7100 4929 59  0000 C CNN
+F 2 "" H 7100 5050 50  0001 C CNN
+F 3 "" H 7100 5050 50  0001 C CNN
+	1    7100 5050
+	1    0    0    -1  
+$EndComp
+Connection ~ 7100 4950
+$Comp
+L Device:Antenna_Shield AE1
+U 1 1 5B1E1AC3
+P 9300 4150
+F 0 "AE1" H 9380 4141 50  0000 L CNN
+F 1 "Antenna" H 9380 4050 50  0000 L CNN
+F 2 "Texas_DN007:Texas_DN007" H 9300 4150 50  0001 C CNN
+F 3 "~" H 9300 4150 50  0001 C CNN
+	1    9300 4150
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small R7
+U 1 1 5B1E8172
+P 5550 5400
+F 0 "R7" H 5609 5446 50  0000 L CNN
+F 1 "10K" H 5609 5355 50  0000 L CNN
+F 2 "Resistors_SMD:R_0603" H 5550 5400 50  0001 C CNN
+F 3 "~" H 5550 5400 50  0001 C CNN
+	1    5550 5400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small R8
+U 1 1 5B1E81CA
+P 5750 5400
+F 0 "R8" H 5809 5446 50  0000 L CNN
+F 1 "10K" H 5809 5355 50  0000 L CNN
+F 2 "Resistors_SMD:R_0603" H 5750 5400 50  0001 C CNN
+F 3 "~" H 5750 5400 50  0001 C CNN
+	1    5750 5400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small R9
+U 1 1 5B1E8250
+P 5950 5400
+F 0 "R9" H 6009 5446 50  0000 L CNN
+F 1 "10K" H 6009 5355 50  0000 L CNN
+F 2 "Resistors_SMD:R_0603" H 5950 5400 50  0001 C CNN
+F 3 "~" H 5950 5400 50  0001 C CNN
+	1    5950 5400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5550 5300 5550 5100
+Wire Wire Line
+	5750 5300 5750 5100
+Wire Wire Line
+	5950 5300 5950 5100
+Wire Wire Line
+	9650 4550 9700 4550
+$Comp
+L Device:C_Small C19
+U 1 1 5B1EFEEE
+P 9300 4450
+F 0 "C19" H 9208 4404 50  0000 R CNN
+F 1 "18pF" H 9208 4495 50  0000 R CNN
+F 2 "Capacitors_SMD:C_0603" H 9300 4450 50  0001 C CNN
+F 3 "~" H 9300 4450 50  0001 C CNN
+	1    9300 4450
+	-1   0    0    1   
+$EndComp
+Connection ~ 9300 4550
+Wire Wire Line
+	9300 4550 9000 4550
+$Comp
+L cc2538node-eagle-import:TAC_SWITCHSMD SW2
+U 1 1 5B1F5099
+P 1950 4750
+F 0 "SW2" V 1904 4898 50  0000 L CNN
+F 1 "FLASH" V 1995 4898 50  0000 L CNN
+F 2 "cc2538node:TACTILE_SWITCH_SMD" H 1950 4950 50  0001 C CNN
+F 3 "" H 1950 4950 50  0001 C CNN
+	1    1950 4750
+	0    1    1    0   
+$EndComp
+$Comp
+L cc2538node-eagle-import:GND #GND0121
+U 1 1 5B1F511B
+P 1950 5050
+F 0 "#GND0121" H 1950 5050 50  0001 C CNN
+F 1 "GND" H 1950 4929 59  0000 C CNN
+F 2 "" H 1950 5050 50  0001 C CNN
+F 3 "" H 1950 5050 50  0001 C CNN
+	1    1950 5050
+	1    0    0    -1  
+$EndComp
+$Comp
+L _connectors:SMA J1
+U 1 1 5B1C82E8
+P 9850 4850
+F 0 "J1" H 9886 5217 50  0000 C CNN
+F 1 "SMA" H 9886 5126 50  0000 C CNN
+F 2 "MOLEX_SMA_F_3460:MOLEX_SMA_F_3460" H 9850 4850 50  0001 L BNN
+F 3 "Amphenol RF" H 9850 4850 50  0001 L BNN
+F 4 "0.50 USD" H 9850 4850 50  0001 L BNN "Field4"
+F 5 "A-1JB" H 9850 4850 50  0001 L BNN "Field5"
+F 6 "Good" H 9850 4850 50  0001 L BNN "Field6"
+F 7 "None" H 9850 4850 50  0001 L BNN "Field7"
+F 8 "Connector; RF; AMC; PCB Jack; Surface Mnt; 50 Ohm; Solder" H 9850 4850 50  0001 L BNN "Field8"
+	1    9850 4850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9750 4750 9000 4950
+Connection ~ 9000 4950
+Wire Wire Line
+	5950 5500 5950 5650
+Wire Wire Line
+	5750 5500 5750 5650
+Wire Wire Line
+	5550 5500 5550 5650
+Text GLabel 950  3150 0    50   Input ~ 0
+PC3
+Text GLabel 950  3250 0    50   Input ~ 0
+PC2
+Wire Wire Line
+	9200 1500 9200 1200
+Wire Wire Line
+	9200 1200 8850 1200
+$Comp
+L cc2538node-eagle-import:USBSMD USB1
+U 1 1 5B1E0EBC
+P 6100 1400
+F 0 "USB1" H 6100 1400 50  0001 C CNN
+F 1 "USBSMD" H 6100 1400 50  0001 C CNN
+F 2 "cc2538node:USB-MICROB" H 6100 1400 50  0001 C CNN
+F 3 "" H 6100 1400 50  0001 C CNN
+	1    6100 1400
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:C_Small C20
+U 1 1 5B1E4BC0
+P 6400 1200
+F 0 "C20" H 6492 1246 50  0000 L CNN
+F 1 "10nF" H 6492 1155 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0603" H 6400 1200 50  0001 C CNN
+F 3 "~" H 6400 1200 50  0001 C CNN
+	1    6400 1200
+	1    0    0    -1  
+$EndComp
+$Comp
+L cc2538node-eagle-import:GND #GND0123
+U 1 1 5B1E4C8D
+P 6400 1000
+F 0 "#GND0123" H 6400 1000 50  0001 C CNN
+F 1 "GND" H 6400 879 59  0000 C CNN
+F 2 "" H 6400 1000 50  0001 C CNN
+F 3 "" H 6400 1000 50  0001 C CNN
+	1    6400 1000
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	6200 1500 6400 1500
+Wire Wire Line
+	6400 1500 6400 1300
+Wire Wire Line
+	6250 1400 6250 1100
+Wire Wire Line
+	6250 1100 6400 1100
+Connection ~ 6400 1100
+Wire Wire Line
+	6250 1400 6200 1400
+Wire Wire Line
+	6400 1500 6550 1500
+Wire Wire Line
+	6900 1500 6900 650 
+Connection ~ 6400 1500
+$Comp
+L Device:C_Small C21
+U 1 1 5B1EF15A
+P 9450 1300
+F 0 "C21" H 9542 1346 50  0000 L CNN
+F 1 "0.1uF" H 9542 1255 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0603" H 9450 1300 50  0001 C CNN
+F 3 "~" H 9450 1300 50  0001 C CNN
+	1    9450 1300
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	9200 1200 9450 1200
+Connection ~ 9200 1200
+$Comp
+L cc2538node-eagle-import:GND #GND0124
+U 1 1 5B1F1746
+P 9450 1500
+F 0 "#GND0124" H 9450 1500 50  0001 C CNN
+F 1 "GND" H 9450 1379 59  0000 C CNN
+F 2 "" H 9450 1500 50  0001 C CNN
+F 3 "" H 9450 1500 50  0001 C CNN
+	1    9450 1500
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	6200 1700 6800 1700
+$Comp
+L Regulator_Linear:MIC5219-3.3YM5 U3
+U 1 1 5B1D8068
+P 6450 2200
+F 0 "U3" V 6404 2405 50  0000 L CNN
+F 1 "LP5907QMFX" V 6495 2405 50  0000 L CNN
+F 2 "TO_SOT_Packages_SMD:SOT-23-5" H 6450 2525 50  0001 C CNN
+F 3 "http://ww1.microchip.com/downloads/en/devicedoc/mic5219.pdf" H 6450 2200 50  0001 C CNN
+	1    6450 2200
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	6550 1500 6550 1800
+Connection ~ 6550 1500
+Wire Wire Line
+	6550 1500 6900 1500
+Wire Wire Line
+	6450 1900 6450 1800
+Wire Wire Line
+	6450 1800 6550 1800
+Connection ~ 6550 1800
+Wire Wire Line
+	6550 1800 6550 1900
+Text GLabel 6550 2500 3    50   Input ~ 0
++3.3V
+NoConn ~ 6450 2500
+$Comp
+L cc2538node-eagle-import:GND #GND0125
+U 1 1 5B1E3D83
+P 6050 2200
+F 0 "#GND0125" H 6050 2200 50  0001 C CNN
+F 1 "GND" V 6050 2131 59  0000 R CNN
+F 2 "" H 6050 2200 50  0001 C CNN
+F 3 "" H 6050 2200 50  0001 C CNN
+	1    6050 2200
+	0    1    1    0   
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x12 J2
+U 1 1 5B214DCD
+P 4150 5350
+F 0 "J2" V 4274 5296 50  0000 C CNN
+F 1 "H1" V 4365 5296 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x12_Pitch2.54mm" H 4150 5350 50  0001 C CNN
+F 3 "~" H 4150 5350 50  0001 C CNN
+	1    4150 5350
+	0    1    1    0   
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x12 J3
+U 1 1 5B214ECA
+P 4150 6100
+F 0 "J3" V 4274 6046 50  0000 C CNN
+F 1 "H2" V 4365 6046 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x12_Pitch2.54mm" H 4150 6100 50  0001 C CNN
+F 3 "~" H 4150 6100 50  0001 C CNN
+	1    4150 6100
+	0    1    1    0   
+$EndComp
+Text GLabel 4650 5150 1    50   Input ~ 0
+PD6
+Text GLabel 4550 5150 1    50   Input ~ 0
+PD7
+Text GLabel 4450 5150 1    50   Input ~ 0
+PB7
+Text GLabel 4350 5150 1    50   Input ~ 0
+PB6
+Text GLabel 4250 5150 1    50   Input ~ 0
+PB5
+Text GLabel 4150 5150 1    50   Input ~ 0
+PB4
+Text GLabel 4050 5150 1    50   Input ~ 0
+PB3
+Text GLabel 3950 5150 1    50   Input ~ 0
+PB2
+Text GLabel 3850 5150 1    50   Input ~ 0
+PB1
+Text GLabel 4450 5900 1    50   Input ~ 0
+PD4
+Text GLabel 4350 5900 1    50   Input ~ 0
+PD3
+Text GLabel 4150 5900 1    50   Input ~ 0
+PD1
+Text GLabel 4050 5900 1    50   Input ~ 0
+PD0
+Text GLabel 3950 5900 1    50   Input ~ 0
+PA7
+Text GLabel 3850 5900 1    50   Input ~ 0
+PA6*
+Text GLabel 3750 5900 1    50   Input ~ 0
+PA5*
+Text GLabel 6900 650  0    50   Input ~ 0
++5V
+Text GLabel 3550 5150 1    50   Input ~ 0
++5V
+$Comp
+L cc2538node-eagle-import:GND #GND0128
+U 1 1 5B21EADF
+P 3750 5050
+F 0 "#GND0128" H 3750 5050 50  0001 C CNN
+F 1 "GND" H 3750 4929 59  0000 C CNN
+F 2 "" H 3750 5050 50  0001 C CNN
+F 3 "" H 3750 5050 50  0001 C CNN
+	1    3750 5050
+	-1   0    0    1   
+$EndComp
+Text GLabel 3650 5150 1    50   Input ~ 0
++3.3V
+$Comp
+L cc2538node-eagle-import:GND #GND0129
+U 1 1 5B21F11D
+P 4650 5800
+F 0 "#GND0129" H 4650 5800 50  0001 C CNN
+F 1 "GND" H 4650 5679 59  0000 C CNN
+F 2 "" H 4650 5800 50  0001 C CNN
+F 3 "" H 4650 5800 50  0001 C CNN
+	1    4650 5800
+	-1   0    0    1   
+$EndComp
+$Comp
+L cc2538node-eagle-import:GND #GND0130
+U 1 1 5B222082
+P 3550 5800
+F 0 "#GND0130" H 3550 5800 50  0001 C CNN
+F 1 "GND" H 3550 5679 59  0000 C CNN
+F 2 "" H 3550 5800 50  0001 C CNN
+F 3 "" H 3550 5800 50  0001 C CNN
+	1    3550 5800
+	-1   0    0    1   
+$EndComp
+$Comp
+L cc2538node-eagle-import:GND #GND0131
+U 1 1 5B2220DF
+P 3650 5800
+F 0 "#GND0131" H 3650 5800 50  0001 C CNN
+F 1 "GND" H 3650 5679 59  0000 C CNN
+F 2 "" H 3650 5800 50  0001 C CNN
+F 3 "" H 3650 5800 50  0001 C CNN
+	1    3650 5800
+	-1   0    0    1   
+$EndComp
+$Comp
+L gsg-symbols:APA102 D1
+U 1 1 5B22D5BC
+P 3300 7400
+F 0 "D1" H 3300 7837 60  0000 C CNN
+F 1 "APA102" H 3300 7731 60  0000 C CNN
+F 2 "gsg-modules:APA102-2020" H 3300 7400 60  0001 C CNN
+F 3 "" H 3300 7400 60  0001 C CNN
+	1    3300 7400
+	1    0    0    -1  
+$EndComp
+Text GLabel 3650 7500 2    50   Input ~ 0
++5V
+$Comp
+L cc2538node-eagle-import:GND #GND01
+U 1 1 5B22D768
+P 2850 7500
+F 0 "#GND01" H 2850 7500 50  0001 C CNN
+F 1 "GND" H 2850 7379 59  0000 C CNN
+F 2 "" H 2850 7500 50  0001 C CNN
+F 3 "" H 2850 7500 50  0001 C CNN
+	1    2850 7500
+	0    1    1    0   
+$EndComp
+NoConn ~ 3650 7400
+NoConn ~ 3650 7300
+$Comp
+L FT232RQ-REEL:FT232RQ-REEL U4
+U 1 1 5B1E55F9
+P 8150 2100
+F 0 "U4" H 8150 3267 50  0000 C CNN
+F 1 "FT232RQ-REEL" H 8150 3176 50  0000 C CNN
+F 2 "FT232RQ-REEL:QFN50P500X500X100-33N" H 8150 2100 50  0001 L BNN
+F 3 "Unavailable" H 8150 2100 50  0001 L BNN
+F 4 "None" H 8150 2100 50  0001 L BNN "Field4"
+F 5 "FT232RQ" H 8150 2100 50  0001 L BNN "Field5"
+F 6 "USB-to-UART 1-CH 256Byte FIFO 5V 32-Pin QFN EP" H 8150 2100 50  0001 L BNN "Field6"
+F 7 "FTDI" H 8150 2100 50  0001 L BNN "Field7"
+F 8 "3.77 USD" H 8150 2100 50  0001 L BNN "Field8"
+	1    8150 2100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6800 1700 6800 1900
+Wire Wire Line
+	6800 1900 7450 1900
+Wire Wire Line
+	6200 1600 6900 1600
+Wire Wire Line
+	6900 1600 6900 2000
+Wire Wire Line
+	6900 2000 7450 2000
+Wire Wire Line
+	9200 1500 8850 1500
+Wire Wire Line
+	8950 650  8950 1300
+Wire Wire Line
+	8950 1300 8850 1300
+Wire Wire Line
+	6900 650  8950 650 
+NoConn ~ 8850 2000
+NoConn ~ 8850 2100
+NoConn ~ 8850 2200
+NoConn ~ 8850 2300
+NoConn ~ 8850 2400
+NoConn ~ 8850 2500
+NoConn ~ 7450 2200
+NoConn ~ 7450 2300
+NoConn ~ 7450 2400
+NoConn ~ 7450 2500
+NoConn ~ 7450 2600
+NoConn ~ 7450 2800
+NoConn ~ 7450 2900
+Wire Wire Line
+	8850 2900 8850 3000
+Connection ~ 8850 3000
+Wire Wire Line
+	8850 3000 8850 3100
+Connection ~ 8850 3100
+Wire Wire Line
+	8850 3100 8850 3200
+Connection ~ 8850 3200
+$Comp
+L cc2538node-eagle-import:GND #GND02
+U 1 1 5B247906
+P 8850 3500
+F 0 "#GND02" H 8850 3500 50  0001 C CNN
+F 1 "GND" H 8850 3379 59  0000 C CNN
+F 2 "" H 8850 3500 50  0001 C CNN
+F 3 "" H 8850 3500 50  0001 C CNN
+	1    8850 3500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8850 3200 8850 3400
+NoConn ~ 7450 1600
+Text GLabel 8850 1900 2    50   Input ~ 0
+TXD
+Text GLabel 8850 1800 2    50   Input ~ 0
+RXD
+Wire Wire Line
+	2850 4700 2950 4700
+Connection ~ 2950 4700
+Wire Wire Line
+	2850 5100 2950 5100
+Connection ~ 2950 5100
+$Comp
+L cc2538node-eagle-import:GND #GND0122
+U 1 1 5B872D3F
+P 7350 1400
+F 0 "#GND0122" H 7350 1400 50  0001 C CNN
+F 1 "GND" V 7350 1331 59  0000 R CNN
+F 2 "" H 7350 1400 50  0001 C CNN
+F 3 "" H 7350 1400 50  0001 C CNN
+	1    7350 1400
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	9750 4750 9800 4750
+Connection ~ 9750 4750
+Connection ~ 9800 4750
+Wire Wire Line
+	9800 4750 9850 4750
+Connection ~ 9850 4750
+Wire Wire Line
+	9850 4750 9900 4750
+Text GLabel 4250 5900 1    50   Input ~ 0
+PD2
+Wire Wire Line
+	1850 4550 1950 4550
+Wire Wire Line
+	1950 4150 1950 4550
+Connection ~ 1950 4550
+Wire Wire Line
+	1850 4950 1950 4950
+Connection ~ 1950 4950
+Text GLabel 2450 4150 3    50   Input ~ 0
+PA7
+NoConn ~ 950  2550
+NoConn ~ 950  2650
+NoConn ~ 950  2750
+NoConn ~ 950  2850
+NoConn ~ 950  2950
+NoConn ~ 950  3350
+NoConn ~ 950  3450
+$Comp
+L cc2538node-eagle-import:GND #GND0126
+U 1 1 5B95DE2F
+P 4550 5800
+F 0 "#GND0126" H 4550 5800 50  0001 C CNN
+F 1 "GND" H 4550 5679 59  0000 C CNN
+F 2 "" H 4550 5800 50  0001 C CNN
+F 3 "" H 4550 5800 50  0001 C CNN
+	1    4550 5800
+	-1   0    0    1   
+$EndComp
+$Comp
+L dk_Logic-Buffers-Drivers-Receivers-Transceivers:SN74AHCT125N U5
+U 1 1 5B979227
+P 2300 6550
+F 0 "U5" V 2197 7291 60  0000 L CNN
+F 1 "SN74AHCT125N" V 2303 7291 60  0000 L CNN
+F 2 "Housings_DFN_QFN:Texas_S-PVQFN-N14" H 2500 6750 60  0001 L CNN
+F 3 "http://www.ti.com/lit/ds/symlink/sn74ahct125.pdf" H 2500 6850 60  0001 L CNN
+F 4 "296-4655-5-ND" H 2500 6950 60  0001 L CNN "Digi-Key_PN"
+F 5 "SN74AHCT125N" H 2500 7050 60  0001 L CNN "MPN"
+F 6 "Integrated Circuits (ICs)" H 2500 7150 60  0001 L CNN "Category"
+F 7 "Logic - Buffers, Drivers, Receivers, Transceivers" H 2500 7250 60  0001 L CNN "Family"
+F 8 "http://www.ti.com/lit/ds/symlink/sn74ahct125.pdf" H 2500 7350 60  0001 L CNN "DK_Datasheet_Link"
+F 9 "/product-detail/en/texas-instruments/SN74AHCT125N/296-4655-5-ND/375798" H 2500 7450 60  0001 L CNN "DK_Detail_Page"
+F 10 "IC BUF NON-INVERT 5.5V 14DIP" H 2500 7550 60  0001 L CNN "Description"
+F 11 "Texas Instruments" H 2500 7650 60  0001 L CNN "Manufacturer"
+F 12 "Active" H 2500 7750 60  0001 L CNN "Status"
+	1    2300 6550
+	0    1    1    0   
+$EndComp
+$Comp
+L cc2538node-eagle-import:GND #GND0127
+U 1 1 5B979342
+P 2700 6050
+F 0 "#GND0127" H 2700 6050 50  0001 C CNN
+F 1 "GND" H 2700 5929 59  0000 C CNN
+F 2 "" H 2700 6050 50  0001 C CNN
+F 3 "" H 2700 6050 50  0001 C CNN
+	1    2700 6050
+	-1   0    0    1   
+$EndComp
+$Comp
+L cc2538node-eagle-import:GND #GND0132
+U 1 1 5B9793A3
+P 2300 6050
+F 0 "#GND0132" H 2300 6050 50  0001 C CNN
+F 1 "GND" H 2300 5929 59  0000 C CNN
+F 2 "" H 2300 6050 50  0001 C CNN
+F 3 "" H 2300 6050 50  0001 C CNN
+	1    2300 6050
+	-1   0    0    1   
+$EndComp
+$Comp
+L cc2538node-eagle-import:GND #GND0133
+U 1 1 5B979404
+P 1900 6050
+F 0 "#GND0133" H 1900 6050 50  0001 C CNN
+F 1 "GND" H 1900 5929 59  0000 C CNN
+F 2 "" H 1900 6050 50  0001 C CNN
+F 3 "" H 1900 6050 50  0001 C CNN
+	1    1900 6050
+	-1   0    0    1   
+$EndComp
+$Comp
+L cc2538node-eagle-import:GND #GND0134
+U 1 1 5B979465
+P 1500 6050
+F 0 "#GND0134" H 1500 6050 50  0001 C CNN
+F 1 "GND" H 1500 5929 59  0000 C CNN
+F 2 "" H 1500 6050 50  0001 C CNN
+F 3 "" H 1500 6050 50  0001 C CNN
+	1    1500 6050
+	-1   0    0    1   
+$EndComp
+$Comp
+L cc2538node-eagle-import:GND #GND0135
+U 1 1 5B9794C6
+P 800 6550
+F 0 "#GND0135" H 800 6550 50  0001 C CNN
+F 1 "GND" H 800 6429 59  0000 C CNN
+F 2 "" H 800 6550 50  0001 C CNN
+F 3 "" H 800 6550 50  0001 C CNN
+	1    800  6550
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	2950 7400 1300 7400
+Wire Wire Line
+	1300 7400 1300 6850
+Wire Wire Line
+	2950 7300 2500 7300
+Text GLabel 1700 6850 3    50   Input ~ 0
+PA5*
+Text GLabel 2100 6850 3    50   Input ~ 0
+PA6*
+Text GLabel 2100 6150 1    50   Input ~ 0
+PA6
+Text GLabel 1700 6150 1    50   Input ~ 0
+PA5
+Text GLabel 1300 6150 1    50   Input ~ 0
+PA3
+Text GLabel 2500 6150 1    50   Input ~ 0
+PA4
+Text GLabel 3000 6550 2    50   Input ~ 0
++5V
+$Comp
+L cc2538node-eagle-import:GND #GND0136
+U 1 1 5B985BAA
+P 9100 4350
+F 0 "#GND0136" H 9100 4350 50  0001 C CNN
+F 1 "GND" H 9100 4229 59  0000 C CNN
+F 2 "" H 9100 4350 50  0001 C CNN
+F 3 "" H 9100 4350 50  0001 C CNN
+	1    9100 4350
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	2500 6850 2500 7300
+$EndSCHEMATC
