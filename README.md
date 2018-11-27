@@ -30,3 +30,9 @@ Make sure to update your KICAD and update the libraries. Then you will need to l
 ![Schematic](https://github.com/ERNE196077/cc2538_cc2592_devboard/blob/master/sch.png)
 ![PCB layout](https://github.com/ERNE196077/cc2538_cc2592_devboard/blob/master/pcb.png)
 ![Board](https://github.com/ERNE196077/cc2538_cc2592_devboard/blob/master/board.jpeg)
+
+## Libraries
+
+Most of the work done with this board has been based in the OpenThread project, but custom libraries are available to fit the capabilities of this board:
+[OpenThread](https://github.com/openthread/openthread)
+[cc2538_cc2592_libs](https://github.com/ERNE196077/cc2538_cc2592_libs)
